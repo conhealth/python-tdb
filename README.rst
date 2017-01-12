@@ -19,4 +19,4 @@ Installation and Usage
 - To compile the c-extension for the bindings just run the usual package
   building commands like:
 
-  python setup.py bdist_wheel sdist
+    python setup.py bdist_wheel sdist

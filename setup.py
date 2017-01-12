@@ -1,19 +1,22 @@
 #!/usr/bin/env python
 
 from __future__ import print_function
+
 import os
 import shutil
 import subprocess
 import sys
 import tarfile
 import tempfile
+
+from setuptools import setup
+from setuptools.extension import Extension
+
 try:
     from urllib.request import urlretrieve
 except ImportError:
     from urllib import urlretrieve
 
-from setuptools import setup
-from setuptools.extension import Extension
 
 # TDB version to build the extension for
 VERSION = '1.3.12'
@@ -64,6 +67,8 @@ setup(name='tdb',
       version=VERSION,
       description='Python package for Sambas TDB (trivial database) bindings',
       license='LGPLv3+',
+      maintainer='Daniel Roschka',
+      maintainer_email='daniel.roschka@connected-health.eu',
       url='https://www.github.com/conhealth/python-tdb',
       classifiers=[
           'Intended Audience :: Developers',
